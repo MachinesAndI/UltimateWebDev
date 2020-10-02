@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="/nit 2.png"/>
+
+<title>forms</title>
+<style>
+body{
+   background-image:url("23.jpg");
+   background-size:100%;}
+#demo{
+text-align:left;
+margin-top:200px;
+ width:500px;
+clear:both;}
+fieldset{
+ box-shadow: 10px 10px 5px grey;
+border:1px solid black;
+padding:10px;}
+legend{text-align:center;
+color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+form input[type="text"]{
+  background-color: white;
+  background-image:url("nit 2.jpg");
+  background-position: 15px 15px; 
+  background-repeat: no-repeat;
+ padding: 12px 20px 12px 40px;
+
+}
+div {
+  width: 300px;
+  height: 100px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(720deg);
+}
+ 
+</style>
+</head>
+<body><center>
+<div id="demo" style="display:none" >
+<form action="page.php" method="get"  >
+<fieldset>
+<legend> Login Portal </legend>
+
+<img src="ok.jpg" alt="Smiley face" style="float:right;width:150px;height:150px;">
+<label>Username : </label><br>
+<input type="text" MAXSIZE="20" size="20px" placeholder="abcdef">
+ 
+<br>
+<label>Password : </label><br>
+<input type="password"  MAXSIZE="12" size="10px">
+<br>
+<label>Select it</label><br>
+<input type="radio" name="ist" checked/>IIT<br>
+<input type="radio" name="ist"/>NIT<br>
+<input type="radio" name="ist"/>IIIT<br>
+<select>
+<option>btech</option>
+<option>mtech</option>
+<option>mba</option>
+<option>reach </option>
+<option> to </option>
+<option> target</option>
+
+<input type="submit" value="submit">
+<input type="reset">
+<audio controls>
+
+  <source src="123.mp3" type="audio/mpeg">
+
+</audio>
+<br> </fieldset>
+</div>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click for FORM !</button>
+
+
+</body>
+</html>
+
