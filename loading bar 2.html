@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            loding bar
+        </title>
+        <style>
+            body{ margin: 0;
+                padding: 0;
+                
+            }
+            ul{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin: 0;
+                padding: 0;
+                display: flex; 
+                border-bottom: 2px solid #262626;
+            }
+            ul li{
+                list-style: none;
+                width: 10px;
+                height: 10px;
+                font-size: 30px;
+                border: 50%;
+                margin: 0 10px;
+                animation: animate 1.2s linear infinite;
+            }
+            ul li:nth-child(1)
+            {
+                animation-delay: 0s;
+            }
+            ul li:nth-child(2)
+            {
+                animation-delay: 0.12s;
+            }
+            ul li:nth-child(3)
+            {
+                animation-delay: 0.24s;
+            }
+            ul li:nth-child(4)
+            {
+                animation-delay: 0.36s;
+            }
+            ul li:nth-child(5)
+            {
+                animation-delay: 0.48s;
+            }
+             ul li:nth-child(6)
+            {
+                animation-delay: 0.60s;
+            }
+            ul li:nth-child(7)
+            {
+                animation-delay: 0.72s;
+            }
+            ul li:nth-child(8)
+            {
+                animation-delay: 0.84s;
+            }
+            ul li:nth-child(9)
+            {
+                animation-delay: 0.96s;
+            }
+            ul li:nth-child(10)
+            {
+                animation-delay: 1.04s;
+            }
+            @keyframes animate
+            {
+                0%
+                {
+                    transform: translateY(0);
+                }
+                35%
+                {
+                    transform: translateY(-50px);
+                }
+                60%
+                {
+                    transform: translateY(-85px);
+                }
+                100%
+                {
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    
+    </head>
+    <body>
+        <ul>
+            <li>C</li>
+            <li>O</li>
+            <li>N</li>
+            <li>F</li>
+             <li>L</li>
+            <li>U</li>
+            <li>E</li>
+            <li>N</li>
+            <li>C</li>
+            <li>E</li>
+        </ul>
+    </body>
+</html>
+
