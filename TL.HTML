@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TITLE>
+            image change
+        </TITLE>
+	<script>
+		function trafficLightsControllerAutomated() {
+	if (!document.getElementById) return false;
+	var greenLight = document.getElementById("green-light");
+	var amberLight = document.getElementById("amber-light");
+	var redLight = document.getElementById("red-light");
+	redLight.style.height = "20px";
+	redLight.style.width = "20px";
+	redLight.style.margin = "1px 0";
+	redLight.style.backgroundColor = "black";
+
+	amberLight.style.height = "20px";
+	amberLight.style.width = "20px";
+	amberLight.style.margin = "1px 0";
+	amberLight.style.backgroundColor = "black";
+
+	greenLight.style.height = "20px";
+	greenLight.style.width = "20px";
+	greenLight.style.margin = "1px 0";
+	greenLight.style.backgroundColor = "black";
+
+	function changeLightsToRed() {
+		greenLight.style.backgroundColor = "black";
+		amberLight.style.backgroundColor = "black";
+		redLight.style.backgroundColor = "red";
+		setTimeout ("changeLightsToAmber()", 2000);
+	}
+
+	function changeLightsToAmber() {
+		greenLight.style.backgroundColor = "black";
+		amberLight.style.backgroundColor = "orange";
+		redLight.style.backgroundColor = "black";
+		setTimeout ("changeLightsToGreen()", 2000);
+	}
+
+	function changeLightsToGreen() {
+		greenLight.style.backgroundColor = "green";
+		amberLight.style.backgroundColor = "black";
+		redLight.style.backgroundColor = "black";
+		setTimeout ("changeLightsToAmberTwo()", 2000);
+	}
+
+	function changeLightsToAmberTwo() {
+		greenLight.style.backgroundColor = "black";
+		amberLight.style.backgroundColor = "orange";
+		redLight.style.backgroundColor = "black";
+		setTimeout ("changeLightsToRed()", 2000);
+	}
+
+	changeLightsToRed();
+	changeLightsToAmber();
+	changeLightsToGreen();
+	changeLightsToAmberTwo();
+}
+</script>
+
+    </head>
+    <body>
+<h1>Automatic Traffic Lights</h1>
+	<div id="wrapper">
+			<div id="red-light"></div>
+			<div id="amber-light"></div>
+			<div id="green-light"></div>
+	</div>
+		<h1><center>TRAFFIC LIGHT</H1>
+            <svg id="1">
+                    <circle cx="900" cy="70" r="60"
+                    stroke="black" stroke-width="4" fill="red" />\
+
+            
+            </svg>
+            <svg id="2" >
+                    <circle cx="900" cy="170" r="60"
+                    stroke="black" stroke-width="4" fill="yellow" />
+         </svg>
+         <svg id="3" > 
+                <circle cx="900" cy="270" r="60"
+                stroke="black" stroke-width="4" fill="green" />
+        </svg>
+
+           
+        </body>
+        </html>
